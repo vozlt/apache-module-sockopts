@@ -1,0 +1,48 @@
+mod_sockopts Module by YoungJoo.Kim <http://superlinuxer.com>
+For Apache_1.3
+Version 1.0 [2009/03/27]
+
+* OVERVIEW 
+	 This module provides a socket option settings.
+	 The following socket option lists are available in this module:
+
+			  TCP_DEFER_ACCEPT
+			  SO_SNDTIMEO
+			  SO_RCVTIMEO
+			  SO_SNDBUF
+			  SO_RCVBUF
+
+* HOW TO INSTALL
+	1. Without DSO Support
+		[root@root apache]# ./configure --add-module=mod_sockopts.c
+		[root@root apache]# make
+		[root@root apache]# make install
+
+	2. With DSO Support
+		[root@root mod_sockopts]# apxs -iac mod_sockopts.c
+
+* CONFIGURATION
+
+	1. Edit httpd.conf
+
+	LoadModule sockopts_module    libexec/mod_sockopts.so
+
+	AddModule mod_sockopts.c
+
+	<IfModule mod_sockopts.c>
+		# TCP_DEFER_ACCEPT
+		SoTcpDeferAccept	20
+
+		# SO_SNDTIMEO - not effective(socket is not closed and be continued the data transfering)
+		# SoSoSndTimeo		5
+
+		# SO_RCVTIMEO - not effective(socket is not closed and be continued the data transfering)
+		# SoSoRcvTimeo		5
+
+		# SO_SNDBUF
+		# SoSoSndBuf		512
+		 
+		# SO_RCVBUF
+		# SoSoRcvBuf		512
+	</IfModule>
+
