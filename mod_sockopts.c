@@ -58,11 +58,10 @@
 
 
 /*
- * $Id: mod_sockopts.c,v 1.1.1.1 2009-03-25 08:21:43 vozlt Exp $
  * @file: mod_sockopts.c
  * @brief: setsockopt setting module
- * @author: YoungJoo.Kim <http://superlinuxer.com>
- * @version: $Revision:
+ * @author: YoungJoo.Kim <vozlt@vozlt.com>
+ * @version:
  * @date: 20090325
  *
  * mod_sockopts.c : setsockopt setting module

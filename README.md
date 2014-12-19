@@ -107,4 +107,4 @@ shell> vi linux-2.6.32-431.el6/net/ipv4/tcp.c
 ````
 
 ## Author
-YoungJoo.Kim <[http://superlinuxer.com](http://superlinuxer.com)>
+YoungJoo.Kim [<vozlt@vozlt.com>]
