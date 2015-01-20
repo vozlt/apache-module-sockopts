@@ -66,8 +66,10 @@
  *
  * mod_sockopts.c : setsockopt setting module
  *
- * This program has been rewritten.
- * original: http://arctic.org/~dean/mod_sockopts/libapache-mod-sockopts-1.0/mod_sockopts.c
+ * This program has been rewritten from follow source.
+ *           @url:    http://arctic.org/~dean/mod_sockopts/libapache-mod-sockopts-1.0/mod_sockopts.c
+ *           @brief:  mod_sockopts: control SO_RCVBUF and TCP_DEFER_ACCEPT
+ *           @author: dean gaudet <dean@arctic.org>
  * 
  * This module provides a socket option settings.
  * The following socket option lists are available in this module:
