@@ -56,11 +56,18 @@
  * University of Illinois, Urbana-Champaign.
  */
 
+/*
+ * mod_sockopts: control SO_RCVBUF and TCP_DEFER_ACCEPT
+ *
+ * v1.0
+ * 
+ * author: dean gaudet <dean@arctic.org>
+ */
 
 /*
  * @file: mod_sockopts.c
  * @brief: setsockopt setting module
- * @author: YoungJoo.Kim <vozlt@vozlt.com>
+ * @author: YoungJoo.Kim <vozltx@gmail.com>
  * @version:
  * @date: 20090325
  *
